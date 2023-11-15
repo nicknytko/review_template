@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[numbers]{natbib}
+\usepackage{bibentry}
+\usepackage{enumerate}
+
+\newcommand{\paper}[2]{%
+\bibentry{#1}
+\begin{itemize}#2\end{itemize}
+\vspace{3em}
+}
+
+\begin{document}
+\section*{Review of Research Area}
+\nobibliography{review_template}
+\bibliographystyle{siam}
+\noindent
+% Cite papers here...
+\paper{paszke2019pytorch}{
+\item PyTorch is a framework for machine learning that provides GPU support and automatic differentiation.
+\item It is widely used in practice for implementing deep ML models.
+}
+%
+\section*{Takeaways}
+\begin{itemize}
+  \item foo bar qux
+\end{itemize}
+\end{document}
